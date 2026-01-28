@@ -1,8 +1,8 @@
-**action-repo 🚀**
+# Action-repo 🚀
 
-GitHub Actions Webhook Trigger Repository
+# GitHub Actions Webhook Trigger Repository
 
-**📌 Overview**
+## 📌 Overview
 
 action-repo is a GitHub repository created as part of the Developer Assessment Task.
 Its sole, noble responsibility is to generate GitHub events and send them to a webhook endpoint (webhook-repo) using GitHub Webhooks.
@@ -10,7 +10,7 @@ Its sole, noble responsibility is to generate GitHub events and send them to a w
 This repository does not contain backend logic, databases, or UI code.
 Think of it as the bell — it rings; the webhook-repo listens.
 
-**🎯 Purpose**
+## 🎯 Purpose
 
 This repository triggers GitHub webhook events for the following actions:
 
@@ -28,7 +28,7 @@ Stored in MongoDB
 
 Displayed on a UI (handled entirely in webhook-repo)
 
-**🔔 Webhook Events Enabled**
+## 🔔 Webhook Events Enabled
 
 The following GitHub events are enabled in this repository:
 
@@ -48,11 +48,11 @@ Target branch
 
 Timestamp
 
-**⚙️ Webhook Configuration**
+## ⚙️ Webhook Configuration
 
 The webhook for this repository is configured as follows:
 
-*Payload URL*
+**Payload URL**
 
 https://<your-ngrok-or-deployed-url>/webhook
 
@@ -70,9 +70,9 @@ Pull Request
 
 Merge Group (if applicable)
 
-**ℹ️ The webhook endpoint is implemented in the separate repository: webhook-repo**
+## ℹ️ The webhook endpoint is implemented in the separate repository: webhook-repo
 
-🧪 How to Test
+**🧪 How to Test**
 
 You can trigger webhook events by performing the following actions in this repository:
 
@@ -90,7 +90,7 @@ Merge a pull request into the target branch
 
 Each action will automatically send a webhook payload to the configured endpoint.
 
-🗂 Repository Role in the System
+## 🗂 Repository Role in the System
 action-repo
    |
    |  (GitHub Webhook Events)
